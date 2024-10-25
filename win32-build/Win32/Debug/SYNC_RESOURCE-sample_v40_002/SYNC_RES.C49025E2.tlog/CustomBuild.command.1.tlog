@@ -1,0 +1,20 @@
+^C:\DEVELOPMENT\SAMPLE_V40_002\WIN32-BUILD\CMAKEFILES\099FD862378FCE76412748050510D029\SYNC_RESOURCE-SAMPLE_V40_002.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E echo "Copying resources for sample_v40_002 ..."
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\DEVELOPMENT\SAMPLE_V40_002\CMAKELISTS.TXT
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Development/sample_v40_002 -BC:/Development/sample_v40_002/win32-build --check-stamp-file C:/Development/sample_v40_002/win32-build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

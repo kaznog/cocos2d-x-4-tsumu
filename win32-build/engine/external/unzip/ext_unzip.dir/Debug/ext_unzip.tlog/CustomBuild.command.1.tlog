@@ -1,0 +1,10 @@
+^C:\DEVELOPMENT\SAMPLE_V40_002\COCOS2D\EXTERNAL\UNZIP\CMAKELISTS.TXT
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Development/sample_v40_002 -BC:/Development/sample_v40_002/win32-build --check-stamp-file C:/Development/sample_v40_002/win32-build/engine/external/unzip/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

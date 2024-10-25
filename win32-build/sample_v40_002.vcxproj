@@ -1,0 +1,903 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|Win32">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|Win32">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{ACCC96AC-CA8B-3E21-AE80-80553DDD792A}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.22621.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>Win32</Platform>
+    <ProjectName>sample_v40_002</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Development\sample_v40_002\win32-build\bin\sample_v40_002\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">sample_v40_002.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">sample_v40_002</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Development\sample_v40_002\win32-build\bin\sample_v40_002\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">sample_v40_002.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">sample_v40_002</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\Development\sample_v40_002\win32-build\bin\sample_v40_002\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">sample_v40_002.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">sample_v40_002</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\Development\sample_v40_002\win32-build\bin\sample_v40_002\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">sample_v40_002.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">sample_v40_002</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">true</GenerateManifest>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Development\sample_v40_002\Classes;C:\Development\sample_v40_002\cocos2d\cocos\audio\include;C:\Development\sample_v40_002\cocos2d;C:\Development\sample_v40_002\cocos2d\cocos;C:\Development\sample_v40_002\cocos2d\extensions;C:\Development\sample_v40_002\cocos2d\cocos\platform;C:\Development\sample_v40_002\cocos2d\cocos\editor-support;C:\Development\sample_v40_002\cocos2d\cocos\base;C:\Development\sample_v40_002\cocos2d\cocos\platform\win32;C:\Development\sample_v40_002\cocos2d\external\recast\..;C:\Development\sample_v40_002\cocos2d\external\tinyxml2\.;C:\Development\sample_v40_002\cocos2d\external\xxhash\.;C:\Development\sample_v40_002\cocos2d\external\xxtea\.;C:\Development\sample_v40_002\cocos2d\external\clipper\.;C:\Development\sample_v40_002\cocos2d\external\edtaa3func\.;C:\Development\sample_v40_002\cocos2d\external\ConvertUTF\.;C:\Development\sample_v40_002\cocos2d\external\poly2tri\..;C:\Development\sample_v40_002\cocos2d\external\md5\..;C:\Development\sample_v40_002\cocos2d\external\unzip\.;C:\Development\sample_v40_002\cocos2d\external\Box2D\include;C:\Development\sample_v40_002\cocos2d\external\chipmunk\include;C:\Development\sample_v40_002\cocos2d\external\freetype2\include\win32\freetype2;C:\Development\sample_v40_002\cocos2d\external\bullet\include;C:\Development\sample_v40_002\cocos2d\external\bullet\include\bullet;C:\Development\sample_v40_002\cocos2d\external\jpeg\include\win32;C:\Development\sample_v40_002\cocos2d\external\openssl\include\win32;C:\Development\sample_v40_002\cocos2d\external\uv\include;C:\Development\sample_v40_002\cocos2d\external\webp\include\win32;C:\Development\sample_v40_002\cocos2d\external\websockets\include\win32;C:\Development\sample_v40_002\cocos2d\external\curl\include\win32;C:\Development\sample_v40_002\cocos2d\external\png\include\win32;C:\Development\sample_v40_002\cocos2d\external\win32-specific\gles\include\OGLES;C:\Development\sample_v40_002\cocos2d\external\win32-specific\icon\include;C:\Development\sample_v40_002\cocos2d\external\win32-specific\MP3Decoder\include;C:\Development\sample_v40_002\cocos2d\external\win32-specific\OggDecoder\include;C:\Development\sample_v40_002\cocos2d\external\win32-specific\OpenalSoft\include;C:\Development\sample_v40_002\cocos2d\external\glfw3\include\win32;C:\Development\sample_v40_002\cocos2d\external\zlib\..\win32-specific\zlib\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;COCOS2D_DEBUG=1;_WIN32;UNICODE;_UNICODE;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;CC_STATIC;LWS_WITH_LIBUV;CMAKE_INTDIR="Debug";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;COCOS2D_DEBUG=1;_WIN32;UNICODE;_UNICODE;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;CC_STATIC;LWS_WITH_LIBUV;CMAKE_INTDIR=\"Debug\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Development\sample_v40_002\Classes;C:\Development\sample_v40_002\cocos2d\cocos\audio\include;C:\Development\sample_v40_002\cocos2d;C:\Development\sample_v40_002\cocos2d\cocos;C:\Development\sample_v40_002\cocos2d\extensions;C:\Development\sample_v40_002\cocos2d\cocos\platform;C:\Development\sample_v40_002\cocos2d\cocos\editor-support;C:\Development\sample_v40_002\cocos2d\cocos\base;C:\Development\sample_v40_002\cocos2d\cocos\platform\win32;C:\Development\sample_v40_002\cocos2d\external\recast\..;C:\Development\sample_v40_002\cocos2d\external\tinyxml2\.;C:\Development\sample_v40_002\cocos2d\external\xxhash\.;C:\Development\sample_v40_002\cocos2d\external\xxtea\.;C:\Development\sample_v40_002\cocos2d\external\clipper\.;C:\Development\sample_v40_002\cocos2d\external\edtaa3func\.;C:\Development\sample_v40_002\cocos2d\external\ConvertUTF\.;C:\Development\sample_v40_002\cocos2d\external\poly2tri\..;C:\Development\sample_v40_002\cocos2d\external\md5\..;C:\Development\sample_v40_002\cocos2d\external\unzip\.;C:\Development\sample_v40_002\cocos2d\external\Box2D\include;C:\Development\sample_v40_002\cocos2d\external\chipmunk\include;C:\Development\sample_v40_002\cocos2d\external\freetype2\include\win32\freetype2;C:\Development\sample_v40_002\cocos2d\external\bullet\include;C:\Development\sample_v40_002\cocos2d\external\bullet\include\bullet;C:\Development\sample_v40_002\cocos2d\external\jpeg\include\win32;C:\Development\sample_v40_002\cocos2d\external\openssl\include\win32;C:\Development\sample_v40_002\cocos2d\external\uv\include;C:\Development\sample_v40_002\cocos2d\external\webp\include\win32;C:\Development\sample_v40_002\cocos2d\external\websockets\include\win32;C:\Development\sample_v40_002\cocos2d\external\curl\include\win32;C:\Development\sample_v40_002\cocos2d\external\png\include\win32;C:\Development\sample_v40_002\cocos2d\external\win32-specific\gles\include\OGLES;C:\Development\sample_v40_002\cocos2d\external\win32-specific\icon\include;C:\Development\sample_v40_002\cocos2d\external\win32-specific\MP3Decoder\include;C:\Development\sample_v40_002\cocos2d\external\win32-specific\OggDecoder\include;C:\Development\sample_v40_002\cocos2d\external\win32-specific\OpenalSoft\include;C:\Development\sample_v40_002\cocos2d\external\glfw3\include\win32;C:\Development\sample_v40_002\cocos2d\external\zlib\..\win32-specific\zlib\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Development\sample_v40_002\Classes;C:\Development\sample_v40_002\cocos2d\cocos\audio\include;C:\Development\sample_v40_002\cocos2d;C:\Development\sample_v40_002\cocos2d\cocos;C:\Development\sample_v40_002\cocos2d\extensions;C:\Development\sample_v40_002\cocos2d\cocos\platform;C:\Development\sample_v40_002\cocos2d\cocos\editor-support;C:\Development\sample_v40_002\cocos2d\cocos\base;C:\Development\sample_v40_002\cocos2d\cocos\platform\win32;C:\Development\sample_v40_002\cocos2d\external\recast\..;C:\Development\sample_v40_002\cocos2d\external\tinyxml2\.;C:\Development\sample_v40_002\cocos2d\external\xxhash\.;C:\Development\sample_v40_002\cocos2d\external\xxtea\.;C:\Development\sample_v40_002\cocos2d\external\clipper\.;C:\Development\sample_v40_002\cocos2d\external\edtaa3func\.;C:\Development\sample_v40_002\cocos2d\external\ConvertUTF\.;C:\Development\sample_v40_002\cocos2d\external\poly2tri\..;C:\Development\sample_v40_002\cocos2d\external\md5\..;C:\Development\sample_v40_002\cocos2d\external\unzip\.;C:\Development\sample_v40_002\cocos2d\external\Box2D\include;C:\Development\sample_v40_002\cocos2d\external\chipmunk\include;C:\Development\sample_v40_002\cocos2d\external\freetype2\include\win32\freetype2;C:\Development\sample_v40_002\cocos2d\external\bullet\include;C:\Development\sample_v40_002\cocos2d\external\bullet\include\bullet;C:\Development\sample_v40_002\cocos2d\external\jpeg\include\win32;C:\Development\sample_v40_002\cocos2d\external\openssl\include\win32;C:\Development\sample_v40_002\cocos2d\external\uv\include;C:\Development\sample_v40_002\cocos2d\external\webp\include\win32;C:\Development\sample_v40_002\cocos2d\external\websockets\include\win32;C:\Development\sample_v40_002\cocos2d\external\curl\include\win32;C:\Development\sample_v40_002\cocos2d\external\png\include\win32;C:\Development\sample_v40_002\cocos2d\external\win32-specific\gles\include\OGLES;C:\Development\sample_v40_002\cocos2d\external\win32-specific\icon\include;C:\Development\sample_v40_002\cocos2d\external\win32-specific\MP3Decoder\include;C:\Development\sample_v40_002\cocos2d\external\win32-specific\OggDecoder\include;C:\Development\sample_v40_002\cocos2d\external\win32-specific\OpenalSoft\include;C:\Development\sample_v40_002\cocos2d\external\glfw3\include\win32;C:\Development\sample_v40_002\cocos2d\external\zlib\..\win32-specific\zlib\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PostBuildEvent>
+      <Message>
+      </Message>
+      <Command>setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Development/sample_v40_002/cocos2d/external/openssl/prebuilt/win32/libssl-1_1.dll C:/Development/sample_v40_002/win32-build/bin/sample_v40_002/Debug/libssl-1_1.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Development/sample_v40_002/cocos2d/external/openssl/prebuilt/win32/libcrypto-1_1.dll C:/Development/sample_v40_002/win32-build/bin/sample_v40_002/Debug/libcrypto-1_1.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Development/sample_v40_002/cocos2d/external/uv/prebuilt/win32/uv.dll C:/Development/sample_v40_002/win32-build/bin/sample_v40_002/Debug/uv.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Development/sample_v40_002/cocos2d/external/websockets/prebuilt/win32/websockets.dll C:/Development/sample_v40_002/win32-build/bin/sample_v40_002/Debug/websockets.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Development/sample_v40_002/cocos2d/external/curl/prebuilt/win32/libcurl.dll C:/Development/sample_v40_002/win32-build/bin/sample_v40_002/Debug/libcurl.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Development/sample_v40_002/cocos2d/external/win32-specific/gles/prebuilt/glew32.dll C:/Development/sample_v40_002/win32-build/bin/sample_v40_002/Debug/glew32.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Development/sample_v40_002/cocos2d/external/win32-specific/icon/prebuilt/iconv.dll C:/Development/sample_v40_002/win32-build/bin/sample_v40_002/Debug/iconv.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Development/sample_v40_002/cocos2d/external/win32-specific/MP3Decoder/prebuilt/libmpg123.dll C:/Development/sample_v40_002/win32-build/bin/sample_v40_002/Debug/libmpg123.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Development/sample_v40_002/cocos2d/external/win32-specific/OggDecoder/prebuilt/libogg.dll C:/Development/sample_v40_002/win32-build/bin/sample_v40_002/Debug/libogg.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Development/sample_v40_002/cocos2d/external/win32-specific/OggDecoder/prebuilt/libvorbis.dll C:/Development/sample_v40_002/win32-build/bin/sample_v40_002/Debug/libvorbis.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Development/sample_v40_002/cocos2d/external/win32-specific/OggDecoder/prebuilt/libvorbisfile.dll C:/Development/sample_v40_002/win32-build/bin/sample_v40_002/Debug/libvorbisfile.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Development/sample_v40_002/cocos2d/external/win32-specific/OpenalSoft/prebuilt/OpenAL32.dll C:/Development/sample_v40_002/win32-build/bin/sample_v40_002/Debug/OpenAL32.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Development/sample_v40_002/cocos2d/external/zlib/../win32-specific/zlib/prebuilt/zlib1.dll C:/Development/sample_v40_002/win32-build/bin/sample_v40_002/Debug/zlib1.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PostBuildEvent>
+    <Link>
+      <AdditionalDependencies>lib\Debug\cocos2d.lib;lib\Debug\external.lib;..\cocos2d\external\Box2D\prebuilt\win32\debug\libbox2d.lib;..\cocos2d\external\chipmunk\prebuilt\win32\debug-lib\libchipmunk.lib;..\cocos2d\external\freetype2\prebuilt\win32\freetype.lib;lib\Debug\ext_recast.lib;..\cocos2d\external\bullet\prebuilt\win32\debug\libbullet.lib;..\cocos2d\external\jpeg\prebuilt\win32\libjpeg.lib;..\cocos2d\external\webp\prebuilt\win32\libwebp.lib;..\cocos2d\external\websockets\prebuilt\win32\websockets.lib;..\cocos2d\external\openssl\prebuilt\win32\libssl.lib;..\cocos2d\external\openssl\prebuilt\win32\libcrypto.lib;..\cocos2d\external\uv\prebuilt\win32\uv_a.lib;lib\Debug\ext_tinyxml2.lib;lib\Debug\ext_xxhash.lib;lib\Debug\ext_xxtea.lib;lib\Debug\ext_clipper.lib;lib\Debug\ext_edtaa3func.lib;lib\Debug\ext_convertUTF.lib;lib\Debug\ext_poly2tri.lib;lib\Debug\ext_md5.lib;..\cocos2d\external\curl\prebuilt\win32\libcurl.lib;..\cocos2d\external\png\prebuilt\win32\libpng.lib;..\cocos2d\external\win32-specific\gles\prebuilt\glew32.lib;..\cocos2d\external\win32-specific\icon\prebuilt\libiconv.lib;..\cocos2d\external\win32-specific\MP3Decoder\prebuilt\libmpg123.lib;..\cocos2d\external\win32-specific\OggDecoder\prebuilt\libogg.lib;..\cocos2d\external\win32-specific\OggDecoder\prebuilt\libvorbis.lib;..\cocos2d\external\win32-specific\OggDecoder\prebuilt\libvorbisfile.lib;..\cocos2d\external\win32-specific\OpenalSoft\prebuilt\OpenAL32.lib;..\cocos2d\external\glfw3\prebuilt\win32\glfw3.lib;..\cocos2d\external\zlib\..\win32-specific\zlib\prebuilt\libzlib.lib;lib\Debug\ext_unzip.lib;ws2_32.lib;userenv.lib;psapi.lib;winmm.lib;Version.lib;Iphlpapi.lib;opengl32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/Development/sample_v40_002/win32-build/Debug/sample_v40_002.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Development/sample_v40_002/win32-build/bin/sample_v40_002/Debug/sample_v40_002.pdb</ProgramDataBaseFile>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Development\sample_v40_002\Classes;C:\Development\sample_v40_002\cocos2d\cocos\audio\include;C:\Development\sample_v40_002\cocos2d;C:\Development\sample_v40_002\cocos2d\cocos;C:\Development\sample_v40_002\cocos2d\extensions;C:\Development\sample_v40_002\cocos2d\cocos\platform;C:\Development\sample_v40_002\cocos2d\cocos\editor-support;C:\Development\sample_v40_002\cocos2d\cocos\base;C:\Development\sample_v40_002\cocos2d\cocos\platform\win32;C:\Development\sample_v40_002\cocos2d\external\recast\..;C:\Development\sample_v40_002\cocos2d\external\tinyxml2\.;C:\Development\sample_v40_002\cocos2d\external\xxhash\.;C:\Development\sample_v40_002\cocos2d\external\xxtea\.;C:\Development\sample_v40_002\cocos2d\external\clipper\.;C:\Development\sample_v40_002\cocos2d\external\edtaa3func\.;C:\Development\sample_v40_002\cocos2d\external\ConvertUTF\.;C:\Development\sample_v40_002\cocos2d\external\poly2tri\..;C:\Development\sample_v40_002\cocos2d\external\md5\..;C:\Development\sample_v40_002\cocos2d\external\unzip\.;C:\Development\sample_v40_002\cocos2d\external\Box2D\include;C:\Development\sample_v40_002\cocos2d\external\chipmunk\include;C:\Development\sample_v40_002\cocos2d\external\freetype2\include\win32\freetype2;C:\Development\sample_v40_002\cocos2d\external\bullet\include;C:\Development\sample_v40_002\cocos2d\external\bullet\include\bullet;C:\Development\sample_v40_002\cocos2d\external\jpeg\include\win32;C:\Development\sample_v40_002\cocos2d\external\openssl\include\win32;C:\Development\sample_v40_002\cocos2d\external\uv\include;C:\Development\sample_v40_002\cocos2d\external\webp\include\win32;C:\Development\sample_v40_002\cocos2d\external\websockets\include\win32;C:\Development\sample_v40_002\cocos2d\external\curl\include\win32;C:\Development\sample_v40_002\cocos2d\external\png\include\win32;C:\Development\sample_v40_002\cocos2d\external\win32-specific\gles\include\OGLES;C:\Development\sample_v40_002\cocos2d\external\win32-specific\icon\include;C:\Development\sample_v40_002\cocos2d\external\win32-specific\MP3Decoder\include;C:\Development\sample_v40_002\cocos2d\external\win32-specific\OggDecoder\include;C:\Development\sample_v40_002\cocos2d\external\win32-specific\OpenalSoft\include;C:\Development\sample_v40_002\cocos2d\external\glfw3\include\win32;C:\Development\sample_v40_002\cocos2d\external\zlib\..\win32-specific\zlib\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_WIN32;UNICODE;_UNICODE;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;CC_STATIC;LWS_WITH_LIBUV;CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_WIN32;UNICODE;_UNICODE;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;CC_STATIC;LWS_WITH_LIBUV;CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Development\sample_v40_002\Classes;C:\Development\sample_v40_002\cocos2d\cocos\audio\include;C:\Development\sample_v40_002\cocos2d;C:\Development\sample_v40_002\cocos2d\cocos;C:\Development\sample_v40_002\cocos2d\extensions;C:\Development\sample_v40_002\cocos2d\cocos\platform;C:\Development\sample_v40_002\cocos2d\cocos\editor-support;C:\Development\sample_v40_002\cocos2d\cocos\base;C:\Development\sample_v40_002\cocos2d\cocos\platform\win32;C:\Development\sample_v40_002\cocos2d\external\recast\..;C:\Development\sample_v40_002\cocos2d\external\tinyxml2\.;C:\Development\sample_v40_002\cocos2d\external\xxhash\.;C:\Development\sample_v40_002\cocos2d\external\xxtea\.;C:\Development\sample_v40_002\cocos2d\external\clipper\.;C:\Development\sample_v40_002\cocos2d\external\edtaa3func\.;C:\Development\sample_v40_002\cocos2d\external\ConvertUTF\.;C:\Development\sample_v40_002\cocos2d\external\poly2tri\..;C:\Development\sample_v40_002\cocos2d\external\md5\..;C:\Development\sample_v40_002\cocos2d\external\unzip\.;C:\Development\sample_v40_002\cocos2d\external\Box2D\include;C:\Development\sample_v40_002\cocos2d\external\chipmunk\include;C:\Development\sample_v40_002\cocos2d\external\freetype2\include\win32\freetype2;C:\Development\sample_v40_002\cocos2d\external\bullet\include;C:\Development\sample_v40_002\cocos2d\external\bullet\include\bullet;C:\Development\sample_v40_002\cocos2d\external\jpeg\include\win32;C:\Development\sample_v40_002\cocos2d\external\openssl\include\win32;C:\Development\sample_v40_002\cocos2d\external\uv\include;C:\Development\sample_v40_002\cocos2d\external\webp\include\win32;C:\Development\sample_v40_002\cocos2d\external\websockets\include\win32;C:\Development\sample_v40_002\cocos2d\external\curl\include\win32;C:\Development\sample_v40_002\cocos2d\external\png\include\win32;C:\Development\sample_v40_002\cocos2d\external\win32-specific\gles\include\OGLES;C:\Development\sample_v40_002\cocos2d\external\win32-specific\icon\include;C:\Development\sample_v40_002\cocos2d\external\win32-specific\MP3Decoder\include;C:\Development\sample_v40_002\cocos2d\external\win32-specific\OggDecoder\include;C:\Development\sample_v40_002\cocos2d\external\win32-specific\OpenalSoft\include;C:\Development\sample_v40_002\cocos2d\external\glfw3\include\win32;C:\Development\sample_v40_002\cocos2d\external\zlib\..\win32-specific\zlib\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Development\sample_v40_002\Classes;C:\Development\sample_v40_002\cocos2d\cocos\audio\include;C:\Development\sample_v40_002\cocos2d;C:\Development\sample_v40_002\cocos2d\cocos;C:\Development\sample_v40_002\cocos2d\extensions;C:\Development\sample_v40_002\cocos2d\cocos\platform;C:\Development\sample_v40_002\cocos2d\cocos\editor-support;C:\Development\sample_v40_002\cocos2d\cocos\base;C:\Development\sample_v40_002\cocos2d\cocos\platform\win32;C:\Development\sample_v40_002\cocos2d\external\recast\..;C:\Development\sample_v40_002\cocos2d\external\tinyxml2\.;C:\Development\sample_v40_002\cocos2d\external\xxhash\.;C:\Development\sample_v40_002\cocos2d\external\xxtea\.;C:\Development\sample_v40_002\cocos2d\external\clipper\.;C:\Development\sample_v40_002\cocos2d\external\edtaa3func\.;C:\Development\sample_v40_002\cocos2d\external\ConvertUTF\.;C:\Development\sample_v40_002\cocos2d\external\poly2tri\..;C:\Development\sample_v40_002\cocos2d\external\md5\..;C:\Development\sample_v40_002\cocos2d\external\unzip\.;C:\Development\sample_v40_002\cocos2d\external\Box2D\include;C:\Development\sample_v40_002\cocos2d\external\chipmunk\include;C:\Development\sample_v40_002\cocos2d\external\freetype2\include\win32\freetype2;C:\Development\sample_v40_002\cocos2d\external\bullet\include;C:\Development\sample_v40_002\cocos2d\external\bullet\include\bullet;C:\Development\sample_v40_002\cocos2d\external\jpeg\include\win32;C:\Development\sample_v40_002\cocos2d\external\openssl\include\win32;C:\Development\sample_v40_002\cocos2d\external\uv\include;C:\Development\sample_v40_002\cocos2d\external\webp\include\win32;C:\Development\sample_v40_002\cocos2d\external\websockets\include\win32;C:\Development\sample_v40_002\cocos2d\external\curl\include\win32;C:\Development\sample_v40_002\cocos2d\external\png\include\win32;C:\Development\sample_v40_002\cocos2d\external\win32-specific\gles\include\OGLES;C:\Development\sample_v40_002\cocos2d\external\win32-specific\icon\include;C:\Development\sample_v40_002\cocos2d\external\win32-specific\MP3Decoder\include;C:\Development\sample_v40_002\cocos2d\external\win32-specific\OggDecoder\include;C:\Development\sample_v40_002\cocos2d\external\win32-specific\OpenalSoft\include;C:\Development\sample_v40_002\cocos2d\external\glfw3\include\win32;C:\Development\sample_v40_002\cocos2d\external\zlib\..\win32-specific\zlib\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PostBuildEvent>
+      <Message>
+      </Message>
+      <Command>setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Development/sample_v40_002/cocos2d/external/openssl/prebuilt/win32/libssl-1_1.dll C:/Development/sample_v40_002/win32-build/bin/sample_v40_002/Release/libssl-1_1.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Development/sample_v40_002/cocos2d/external/openssl/prebuilt/win32/libcrypto-1_1.dll C:/Development/sample_v40_002/win32-build/bin/sample_v40_002/Release/libcrypto-1_1.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Development/sample_v40_002/cocos2d/external/uv/prebuilt/win32/uv.dll C:/Development/sample_v40_002/win32-build/bin/sample_v40_002/Release/uv.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Development/sample_v40_002/cocos2d/external/websockets/prebuilt/win32/websockets.dll C:/Development/sample_v40_002/win32-build/bin/sample_v40_002/Release/websockets.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Development/sample_v40_002/cocos2d/external/curl/prebuilt/win32/libcurl.dll C:/Development/sample_v40_002/win32-build/bin/sample_v40_002/Release/libcurl.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Development/sample_v40_002/cocos2d/external/win32-specific/gles/prebuilt/glew32.dll C:/Development/sample_v40_002/win32-build/bin/sample_v40_002/Release/glew32.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Development/sample_v40_002/cocos2d/external/win32-specific/icon/prebuilt/iconv.dll C:/Development/sample_v40_002/win32-build/bin/sample_v40_002/Release/iconv.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Development/sample_v40_002/cocos2d/external/win32-specific/MP3Decoder/prebuilt/libmpg123.dll C:/Development/sample_v40_002/win32-build/bin/sample_v40_002/Release/libmpg123.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Development/sample_v40_002/cocos2d/external/win32-specific/OggDecoder/prebuilt/libogg.dll C:/Development/sample_v40_002/win32-build/bin/sample_v40_002/Release/libogg.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Development/sample_v40_002/cocos2d/external/win32-specific/OggDecoder/prebuilt/libvorbis.dll C:/Development/sample_v40_002/win32-build/bin/sample_v40_002/Release/libvorbis.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Development/sample_v40_002/cocos2d/external/win32-specific/OggDecoder/prebuilt/libvorbisfile.dll C:/Development/sample_v40_002/win32-build/bin/sample_v40_002/Release/libvorbisfile.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Development/sample_v40_002/cocos2d/external/win32-specific/OpenalSoft/prebuilt/OpenAL32.dll C:/Development/sample_v40_002/win32-build/bin/sample_v40_002/Release/OpenAL32.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Development/sample_v40_002/cocos2d/external/zlib/../win32-specific/zlib/prebuilt/zlib1.dll C:/Development/sample_v40_002/win32-build/bin/sample_v40_002/Release/zlib1.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PostBuildEvent>
+    <Link>
+      <AdditionalDependencies>lib\Release\cocos2d.lib;lib\Release\external.lib;..\cocos2d\external\Box2D\prebuilt\win32\release\libbox2d.lib;..\cocos2d\external\chipmunk\prebuilt\win32\release-lib\libchipmunk.lib;..\cocos2d\external\freetype2\prebuilt\win32\freetype.lib;lib\Release\ext_recast.lib;..\cocos2d\external\bullet\prebuilt\win32\release\libbullet.lib;..\cocos2d\external\jpeg\prebuilt\win32\libjpeg.lib;..\cocos2d\external\webp\prebuilt\win32\libwebp.lib;..\cocos2d\external\websockets\prebuilt\win32\websockets.lib;..\cocos2d\external\openssl\prebuilt\win32\libssl.lib;..\cocos2d\external\openssl\prebuilt\win32\libcrypto.lib;..\cocos2d\external\uv\prebuilt\win32\uv_a.lib;lib\Release\ext_tinyxml2.lib;lib\Release\ext_xxhash.lib;lib\Release\ext_xxtea.lib;lib\Release\ext_clipper.lib;lib\Release\ext_edtaa3func.lib;lib\Release\ext_convertUTF.lib;lib\Release\ext_poly2tri.lib;lib\Release\ext_md5.lib;..\cocos2d\external\curl\prebuilt\win32\libcurl.lib;..\cocos2d\external\png\prebuilt\win32\libpng.lib;..\cocos2d\external\win32-specific\gles\prebuilt\glew32.lib;..\cocos2d\external\win32-specific\icon\prebuilt\libiconv.lib;..\cocos2d\external\win32-specific\MP3Decoder\prebuilt\libmpg123.lib;..\cocos2d\external\win32-specific\OggDecoder\prebuilt\libogg.lib;..\cocos2d\external\win32-specific\OggDecoder\prebuilt\libvorbis.lib;..\cocos2d\external\win32-specific\OggDecoder\prebuilt\libvorbisfile.lib;..\cocos2d\external\win32-specific\OpenalSoft\prebuilt\OpenAL32.lib;..\cocos2d\external\glfw3\prebuilt\win32\glfw3.lib;..\cocos2d\external\zlib\..\win32-specific\zlib\prebuilt\libzlib.lib;lib\Release\ext_unzip.lib;ws2_32.lib;userenv.lib;psapi.lib;winmm.lib;Version.lib;Iphlpapi.lib;opengl32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/Development/sample_v40_002/win32-build/Release/sample_v40_002.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Development/sample_v40_002/win32-build/bin/sample_v40_002/Release/sample_v40_002.pdb</ProgramDataBaseFile>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Development\sample_v40_002\Classes;C:\Development\sample_v40_002\cocos2d\cocos\audio\include;C:\Development\sample_v40_002\cocos2d;C:\Development\sample_v40_002\cocos2d\cocos;C:\Development\sample_v40_002\cocos2d\extensions;C:\Development\sample_v40_002\cocos2d\cocos\platform;C:\Development\sample_v40_002\cocos2d\cocos\editor-support;C:\Development\sample_v40_002\cocos2d\cocos\base;C:\Development\sample_v40_002\cocos2d\cocos\platform\win32;C:\Development\sample_v40_002\cocos2d\external\recast\..;C:\Development\sample_v40_002\cocos2d\external\tinyxml2\.;C:\Development\sample_v40_002\cocos2d\external\xxhash\.;C:\Development\sample_v40_002\cocos2d\external\xxtea\.;C:\Development\sample_v40_002\cocos2d\external\clipper\.;C:\Development\sample_v40_002\cocos2d\external\edtaa3func\.;C:\Development\sample_v40_002\cocos2d\external\ConvertUTF\.;C:\Development\sample_v40_002\cocos2d\external\poly2tri\..;C:\Development\sample_v40_002\cocos2d\external\md5\..;C:\Development\sample_v40_002\cocos2d\external\unzip\.;C:\Development\sample_v40_002\cocos2d\external\Box2D\include;C:\Development\sample_v40_002\cocos2d\external\chipmunk\include;C:\Development\sample_v40_002\cocos2d\external\freetype2\include\win32\freetype2;C:\Development\sample_v40_002\cocos2d\external\bullet\include;C:\Development\sample_v40_002\cocos2d\external\bullet\include\bullet;C:\Development\sample_v40_002\cocos2d\external\jpeg\include\win32;C:\Development\sample_v40_002\cocos2d\external\openssl\include\win32;C:\Development\sample_v40_002\cocos2d\external\uv\include;C:\Development\sample_v40_002\cocos2d\external\webp\include\win32;C:\Development\sample_v40_002\cocos2d\external\websockets\include\win32;C:\Development\sample_v40_002\cocos2d\external\curl\include\win32;C:\Development\sample_v40_002\cocos2d\external\png\include\win32;C:\Development\sample_v40_002\cocos2d\external\win32-specific\gles\include\OGLES;C:\Development\sample_v40_002\cocos2d\external\win32-specific\icon\include;C:\Development\sample_v40_002\cocos2d\external\win32-specific\MP3Decoder\include;C:\Development\sample_v40_002\cocos2d\external\win32-specific\OggDecoder\include;C:\Development\sample_v40_002\cocos2d\external\win32-specific\OpenalSoft\include;C:\Development\sample_v40_002\cocos2d\external\glfw3\include\win32;C:\Development\sample_v40_002\cocos2d\external\zlib\..\win32-specific\zlib\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_WIN32;UNICODE;_UNICODE;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;CC_STATIC;LWS_WITH_LIBUV;CMAKE_INTDIR="MinSizeRel";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_WIN32;UNICODE;_UNICODE;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;CC_STATIC;LWS_WITH_LIBUV;CMAKE_INTDIR=\"MinSizeRel\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Development\sample_v40_002\Classes;C:\Development\sample_v40_002\cocos2d\cocos\audio\include;C:\Development\sample_v40_002\cocos2d;C:\Development\sample_v40_002\cocos2d\cocos;C:\Development\sample_v40_002\cocos2d\extensions;C:\Development\sample_v40_002\cocos2d\cocos\platform;C:\Development\sample_v40_002\cocos2d\cocos\editor-support;C:\Development\sample_v40_002\cocos2d\cocos\base;C:\Development\sample_v40_002\cocos2d\cocos\platform\win32;C:\Development\sample_v40_002\cocos2d\external\recast\..;C:\Development\sample_v40_002\cocos2d\external\tinyxml2\.;C:\Development\sample_v40_002\cocos2d\external\xxhash\.;C:\Development\sample_v40_002\cocos2d\external\xxtea\.;C:\Development\sample_v40_002\cocos2d\external\clipper\.;C:\Development\sample_v40_002\cocos2d\external\edtaa3func\.;C:\Development\sample_v40_002\cocos2d\external\ConvertUTF\.;C:\Development\sample_v40_002\cocos2d\external\poly2tri\..;C:\Development\sample_v40_002\cocos2d\external\md5\..;C:\Development\sample_v40_002\cocos2d\external\unzip\.;C:\Development\sample_v40_002\cocos2d\external\Box2D\include;C:\Development\sample_v40_002\cocos2d\external\chipmunk\include;C:\Development\sample_v40_002\cocos2d\external\freetype2\include\win32\freetype2;C:\Development\sample_v40_002\cocos2d\external\bullet\include;C:\Development\sample_v40_002\cocos2d\external\bullet\include\bullet;C:\Development\sample_v40_002\cocos2d\external\jpeg\include\win32;C:\Development\sample_v40_002\cocos2d\external\openssl\include\win32;C:\Development\sample_v40_002\cocos2d\external\uv\include;C:\Development\sample_v40_002\cocos2d\external\webp\include\win32;C:\Development\sample_v40_002\cocos2d\external\websockets\include\win32;C:\Development\sample_v40_002\cocos2d\external\curl\include\win32;C:\Development\sample_v40_002\cocos2d\external\png\include\win32;C:\Development\sample_v40_002\cocos2d\external\win32-specific\gles\include\OGLES;C:\Development\sample_v40_002\cocos2d\external\win32-specific\icon\include;C:\Development\sample_v40_002\cocos2d\external\win32-specific\MP3Decoder\include;C:\Development\sample_v40_002\cocos2d\external\win32-specific\OggDecoder\include;C:\Development\sample_v40_002\cocos2d\external\win32-specific\OpenalSoft\include;C:\Development\sample_v40_002\cocos2d\external\glfw3\include\win32;C:\Development\sample_v40_002\cocos2d\external\zlib\..\win32-specific\zlib\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Development\sample_v40_002\Classes;C:\Development\sample_v40_002\cocos2d\cocos\audio\include;C:\Development\sample_v40_002\cocos2d;C:\Development\sample_v40_002\cocos2d\cocos;C:\Development\sample_v40_002\cocos2d\extensions;C:\Development\sample_v40_002\cocos2d\cocos\platform;C:\Development\sample_v40_002\cocos2d\cocos\editor-support;C:\Development\sample_v40_002\cocos2d\cocos\base;C:\Development\sample_v40_002\cocos2d\cocos\platform\win32;C:\Development\sample_v40_002\cocos2d\external\recast\..;C:\Development\sample_v40_002\cocos2d\external\tinyxml2\.;C:\Development\sample_v40_002\cocos2d\external\xxhash\.;C:\Development\sample_v40_002\cocos2d\external\xxtea\.;C:\Development\sample_v40_002\cocos2d\external\clipper\.;C:\Development\sample_v40_002\cocos2d\external\edtaa3func\.;C:\Development\sample_v40_002\cocos2d\external\ConvertUTF\.;C:\Development\sample_v40_002\cocos2d\external\poly2tri\..;C:\Development\sample_v40_002\cocos2d\external\md5\..;C:\Development\sample_v40_002\cocos2d\external\unzip\.;C:\Development\sample_v40_002\cocos2d\external\Box2D\include;C:\Development\sample_v40_002\cocos2d\external\chipmunk\include;C:\Development\sample_v40_002\cocos2d\external\freetype2\include\win32\freetype2;C:\Development\sample_v40_002\cocos2d\external\bullet\include;C:\Development\sample_v40_002\cocos2d\external\bullet\include\bullet;C:\Development\sample_v40_002\cocos2d\external\jpeg\include\win32;C:\Development\sample_v40_002\cocos2d\external\openssl\include\win32;C:\Development\sample_v40_002\cocos2d\external\uv\include;C:\Development\sample_v40_002\cocos2d\external\webp\include\win32;C:\Development\sample_v40_002\cocos2d\external\websockets\include\win32;C:\Development\sample_v40_002\cocos2d\external\curl\include\win32;C:\Development\sample_v40_002\cocos2d\external\png\include\win32;C:\Development\sample_v40_002\cocos2d\external\win32-specific\gles\include\OGLES;C:\Development\sample_v40_002\cocos2d\external\win32-specific\icon\include;C:\Development\sample_v40_002\cocos2d\external\win32-specific\MP3Decoder\include;C:\Development\sample_v40_002\cocos2d\external\win32-specific\OggDecoder\include;C:\Development\sample_v40_002\cocos2d\external\win32-specific\OpenalSoft\include;C:\Development\sample_v40_002\cocos2d\external\glfw3\include\win32;C:\Development\sample_v40_002\cocos2d\external\zlib\..\win32-specific\zlib\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PostBuildEvent>
+      <Message>
+      </Message>
+      <Command>setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Development/sample_v40_002/cocos2d/external/openssl/prebuilt/win32/libssl-1_1.dll C:/Development/sample_v40_002/win32-build/bin/sample_v40_002/MinSizeRel/libssl-1_1.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Development/sample_v40_002/cocos2d/external/openssl/prebuilt/win32/libcrypto-1_1.dll C:/Development/sample_v40_002/win32-build/bin/sample_v40_002/MinSizeRel/libcrypto-1_1.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Development/sample_v40_002/cocos2d/external/uv/prebuilt/win32/uv.dll C:/Development/sample_v40_002/win32-build/bin/sample_v40_002/MinSizeRel/uv.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Development/sample_v40_002/cocos2d/external/websockets/prebuilt/win32/websockets.dll C:/Development/sample_v40_002/win32-build/bin/sample_v40_002/MinSizeRel/websockets.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Development/sample_v40_002/cocos2d/external/curl/prebuilt/win32/libcurl.dll C:/Development/sample_v40_002/win32-build/bin/sample_v40_002/MinSizeRel/libcurl.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Development/sample_v40_002/cocos2d/external/win32-specific/gles/prebuilt/glew32.dll C:/Development/sample_v40_002/win32-build/bin/sample_v40_002/MinSizeRel/glew32.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Development/sample_v40_002/cocos2d/external/win32-specific/icon/prebuilt/iconv.dll C:/Development/sample_v40_002/win32-build/bin/sample_v40_002/MinSizeRel/iconv.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Development/sample_v40_002/cocos2d/external/win32-specific/MP3Decoder/prebuilt/libmpg123.dll C:/Development/sample_v40_002/win32-build/bin/sample_v40_002/MinSizeRel/libmpg123.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Development/sample_v40_002/cocos2d/external/win32-specific/OggDecoder/prebuilt/libogg.dll C:/Development/sample_v40_002/win32-build/bin/sample_v40_002/MinSizeRel/libogg.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Development/sample_v40_002/cocos2d/external/win32-specific/OggDecoder/prebuilt/libvorbis.dll C:/Development/sample_v40_002/win32-build/bin/sample_v40_002/MinSizeRel/libvorbis.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Development/sample_v40_002/cocos2d/external/win32-specific/OggDecoder/prebuilt/libvorbisfile.dll C:/Development/sample_v40_002/win32-build/bin/sample_v40_002/MinSizeRel/libvorbisfile.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Development/sample_v40_002/cocos2d/external/win32-specific/OpenalSoft/prebuilt/OpenAL32.dll C:/Development/sample_v40_002/win32-build/bin/sample_v40_002/MinSizeRel/OpenAL32.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Development/sample_v40_002/cocos2d/external/zlib/../win32-specific/zlib/prebuilt/zlib1.dll C:/Development/sample_v40_002/win32-build/bin/sample_v40_002/MinSizeRel/zlib1.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PostBuildEvent>
+    <Link>
+      <AdditionalDependencies>lib\MinSizeRel\cocos2d.lib;lib\MinSizeRel\external.lib;..\cocos2d\external\Box2D\prebuilt\win32\release\libbox2d.lib;..\cocos2d\external\chipmunk\prebuilt\win32\release-lib\libchipmunk.lib;..\cocos2d\external\freetype2\prebuilt\win32\freetype.lib;lib\MinSizeRel\ext_recast.lib;..\cocos2d\external\bullet\prebuilt\win32\release\libbullet.lib;..\cocos2d\external\jpeg\prebuilt\win32\libjpeg.lib;..\cocos2d\external\webp\prebuilt\win32\libwebp.lib;..\cocos2d\external\websockets\prebuilt\win32\websockets.lib;..\cocos2d\external\openssl\prebuilt\win32\libssl.lib;..\cocos2d\external\openssl\prebuilt\win32\libcrypto.lib;..\cocos2d\external\uv\prebuilt\win32\uv_a.lib;lib\MinSizeRel\ext_tinyxml2.lib;lib\MinSizeRel\ext_xxhash.lib;lib\MinSizeRel\ext_xxtea.lib;lib\MinSizeRel\ext_clipper.lib;lib\MinSizeRel\ext_edtaa3func.lib;lib\MinSizeRel\ext_convertUTF.lib;lib\MinSizeRel\ext_poly2tri.lib;lib\MinSizeRel\ext_md5.lib;..\cocos2d\external\curl\prebuilt\win32\libcurl.lib;..\cocos2d\external\png\prebuilt\win32\libpng.lib;..\cocos2d\external\win32-specific\gles\prebuilt\glew32.lib;..\cocos2d\external\win32-specific\icon\prebuilt\libiconv.lib;..\cocos2d\external\win32-specific\MP3Decoder\prebuilt\libmpg123.lib;..\cocos2d\external\win32-specific\OggDecoder\prebuilt\libogg.lib;..\cocos2d\external\win32-specific\OggDecoder\prebuilt\libvorbis.lib;..\cocos2d\external\win32-specific\OggDecoder\prebuilt\libvorbisfile.lib;..\cocos2d\external\win32-specific\OpenalSoft\prebuilt\OpenAL32.lib;..\cocos2d\external\glfw3\prebuilt\win32\glfw3.lib;..\cocos2d\external\zlib\..\win32-specific\zlib\prebuilt\libzlib.lib;lib\MinSizeRel\ext_unzip.lib;ws2_32.lib;userenv.lib;psapi.lib;winmm.lib;Version.lib;Iphlpapi.lib;opengl32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/Development/sample_v40_002/win32-build/MinSizeRel/sample_v40_002.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Development/sample_v40_002/win32-build/bin/sample_v40_002/MinSizeRel/sample_v40_002.pdb</ProgramDataBaseFile>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Development\sample_v40_002\Classes;C:\Development\sample_v40_002\cocos2d\cocos\audio\include;C:\Development\sample_v40_002\cocos2d;C:\Development\sample_v40_002\cocos2d\cocos;C:\Development\sample_v40_002\cocos2d\extensions;C:\Development\sample_v40_002\cocos2d\cocos\platform;C:\Development\sample_v40_002\cocos2d\cocos\editor-support;C:\Development\sample_v40_002\cocos2d\cocos\base;C:\Development\sample_v40_002\cocos2d\cocos\platform\win32;C:\Development\sample_v40_002\cocos2d\external\recast\..;C:\Development\sample_v40_002\cocos2d\external\tinyxml2\.;C:\Development\sample_v40_002\cocos2d\external\xxhash\.;C:\Development\sample_v40_002\cocos2d\external\xxtea\.;C:\Development\sample_v40_002\cocos2d\external\clipper\.;C:\Development\sample_v40_002\cocos2d\external\edtaa3func\.;C:\Development\sample_v40_002\cocos2d\external\ConvertUTF\.;C:\Development\sample_v40_002\cocos2d\external\poly2tri\..;C:\Development\sample_v40_002\cocos2d\external\md5\..;C:\Development\sample_v40_002\cocos2d\external\unzip\.;C:\Development\sample_v40_002\cocos2d\external\Box2D\include;C:\Development\sample_v40_002\cocos2d\external\chipmunk\include;C:\Development\sample_v40_002\cocos2d\external\freetype2\include\win32\freetype2;C:\Development\sample_v40_002\cocos2d\external\bullet\include;C:\Development\sample_v40_002\cocos2d\external\bullet\include\bullet;C:\Development\sample_v40_002\cocos2d\external\jpeg\include\win32;C:\Development\sample_v40_002\cocos2d\external\openssl\include\win32;C:\Development\sample_v40_002\cocos2d\external\uv\include;C:\Development\sample_v40_002\cocos2d\external\webp\include\win32;C:\Development\sample_v40_002\cocos2d\external\websockets\include\win32;C:\Development\sample_v40_002\cocos2d\external\curl\include\win32;C:\Development\sample_v40_002\cocos2d\external\png\include\win32;C:\Development\sample_v40_002\cocos2d\external\win32-specific\gles\include\OGLES;C:\Development\sample_v40_002\cocos2d\external\win32-specific\icon\include;C:\Development\sample_v40_002\cocos2d\external\win32-specific\MP3Decoder\include;C:\Development\sample_v40_002\cocos2d\external\win32-specific\OggDecoder\include;C:\Development\sample_v40_002\cocos2d\external\win32-specific\OpenalSoft\include;C:\Development\sample_v40_002\cocos2d\external\glfw3\include\win32;C:\Development\sample_v40_002\cocos2d\external\zlib\..\win32-specific\zlib\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_WIN32;UNICODE;_UNICODE;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;CC_STATIC;LWS_WITH_LIBUV;CMAKE_INTDIR="RelWithDebInfo";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_WIN32;UNICODE;_UNICODE;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;CC_STATIC;LWS_WITH_LIBUV;CMAKE_INTDIR=\"RelWithDebInfo\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Development\sample_v40_002\Classes;C:\Development\sample_v40_002\cocos2d\cocos\audio\include;C:\Development\sample_v40_002\cocos2d;C:\Development\sample_v40_002\cocos2d\cocos;C:\Development\sample_v40_002\cocos2d\extensions;C:\Development\sample_v40_002\cocos2d\cocos\platform;C:\Development\sample_v40_002\cocos2d\cocos\editor-support;C:\Development\sample_v40_002\cocos2d\cocos\base;C:\Development\sample_v40_002\cocos2d\cocos\platform\win32;C:\Development\sample_v40_002\cocos2d\external\recast\..;C:\Development\sample_v40_002\cocos2d\external\tinyxml2\.;C:\Development\sample_v40_002\cocos2d\external\xxhash\.;C:\Development\sample_v40_002\cocos2d\external\xxtea\.;C:\Development\sample_v40_002\cocos2d\external\clipper\.;C:\Development\sample_v40_002\cocos2d\external\edtaa3func\.;C:\Development\sample_v40_002\cocos2d\external\ConvertUTF\.;C:\Development\sample_v40_002\cocos2d\external\poly2tri\..;C:\Development\sample_v40_002\cocos2d\external\md5\..;C:\Development\sample_v40_002\cocos2d\external\unzip\.;C:\Development\sample_v40_002\cocos2d\external\Box2D\include;C:\Development\sample_v40_002\cocos2d\external\chipmunk\include;C:\Development\sample_v40_002\cocos2d\external\freetype2\include\win32\freetype2;C:\Development\sample_v40_002\cocos2d\external\bullet\include;C:\Development\sample_v40_002\cocos2d\external\bullet\include\bullet;C:\Development\sample_v40_002\cocos2d\external\jpeg\include\win32;C:\Development\sample_v40_002\cocos2d\external\openssl\include\win32;C:\Development\sample_v40_002\cocos2d\external\uv\include;C:\Development\sample_v40_002\cocos2d\external\webp\include\win32;C:\Development\sample_v40_002\cocos2d\external\websockets\include\win32;C:\Development\sample_v40_002\cocos2d\external\curl\include\win32;C:\Development\sample_v40_002\cocos2d\external\png\include\win32;C:\Development\sample_v40_002\cocos2d\external\win32-specific\gles\include\OGLES;C:\Development\sample_v40_002\cocos2d\external\win32-specific\icon\include;C:\Development\sample_v40_002\cocos2d\external\win32-specific\MP3Decoder\include;C:\Development\sample_v40_002\cocos2d\external\win32-specific\OggDecoder\include;C:\Development\sample_v40_002\cocos2d\external\win32-specific\OpenalSoft\include;C:\Development\sample_v40_002\cocos2d\external\glfw3\include\win32;C:\Development\sample_v40_002\cocos2d\external\zlib\..\win32-specific\zlib\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Development\sample_v40_002\Classes;C:\Development\sample_v40_002\cocos2d\cocos\audio\include;C:\Development\sample_v40_002\cocos2d;C:\Development\sample_v40_002\cocos2d\cocos;C:\Development\sample_v40_002\cocos2d\extensions;C:\Development\sample_v40_002\cocos2d\cocos\platform;C:\Development\sample_v40_002\cocos2d\cocos\editor-support;C:\Development\sample_v40_002\cocos2d\cocos\base;C:\Development\sample_v40_002\cocos2d\cocos\platform\win32;C:\Development\sample_v40_002\cocos2d\external\recast\..;C:\Development\sample_v40_002\cocos2d\external\tinyxml2\.;C:\Development\sample_v40_002\cocos2d\external\xxhash\.;C:\Development\sample_v40_002\cocos2d\external\xxtea\.;C:\Development\sample_v40_002\cocos2d\external\clipper\.;C:\Development\sample_v40_002\cocos2d\external\edtaa3func\.;C:\Development\sample_v40_002\cocos2d\external\ConvertUTF\.;C:\Development\sample_v40_002\cocos2d\external\poly2tri\..;C:\Development\sample_v40_002\cocos2d\external\md5\..;C:\Development\sample_v40_002\cocos2d\external\unzip\.;C:\Development\sample_v40_002\cocos2d\external\Box2D\include;C:\Development\sample_v40_002\cocos2d\external\chipmunk\include;C:\Development\sample_v40_002\cocos2d\external\freetype2\include\win32\freetype2;C:\Development\sample_v40_002\cocos2d\external\bullet\include;C:\Development\sample_v40_002\cocos2d\external\bullet\include\bullet;C:\Development\sample_v40_002\cocos2d\external\jpeg\include\win32;C:\Development\sample_v40_002\cocos2d\external\openssl\include\win32;C:\Development\sample_v40_002\cocos2d\external\uv\include;C:\Development\sample_v40_002\cocos2d\external\webp\include\win32;C:\Development\sample_v40_002\cocos2d\external\websockets\include\win32;C:\Development\sample_v40_002\cocos2d\external\curl\include\win32;C:\Development\sample_v40_002\cocos2d\external\png\include\win32;C:\Development\sample_v40_002\cocos2d\external\win32-specific\gles\include\OGLES;C:\Development\sample_v40_002\cocos2d\external\win32-specific\icon\include;C:\Development\sample_v40_002\cocos2d\external\win32-specific\MP3Decoder\include;C:\Development\sample_v40_002\cocos2d\external\win32-specific\OggDecoder\include;C:\Development\sample_v40_002\cocos2d\external\win32-specific\OpenalSoft\include;C:\Development\sample_v40_002\cocos2d\external\glfw3\include\win32;C:\Development\sample_v40_002\cocos2d\external\zlib\..\win32-specific\zlib\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PostBuildEvent>
+      <Message>
+      </Message>
+      <Command>setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Development/sample_v40_002/cocos2d/external/openssl/prebuilt/win32/libssl-1_1.dll C:/Development/sample_v40_002/win32-build/bin/sample_v40_002/RelWithDebInfo/libssl-1_1.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Development/sample_v40_002/cocos2d/external/openssl/prebuilt/win32/libcrypto-1_1.dll C:/Development/sample_v40_002/win32-build/bin/sample_v40_002/RelWithDebInfo/libcrypto-1_1.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Development/sample_v40_002/cocos2d/external/uv/prebuilt/win32/uv.dll C:/Development/sample_v40_002/win32-build/bin/sample_v40_002/RelWithDebInfo/uv.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Development/sample_v40_002/cocos2d/external/websockets/prebuilt/win32/websockets.dll C:/Development/sample_v40_002/win32-build/bin/sample_v40_002/RelWithDebInfo/websockets.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Development/sample_v40_002/cocos2d/external/curl/prebuilt/win32/libcurl.dll C:/Development/sample_v40_002/win32-build/bin/sample_v40_002/RelWithDebInfo/libcurl.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Development/sample_v40_002/cocos2d/external/win32-specific/gles/prebuilt/glew32.dll C:/Development/sample_v40_002/win32-build/bin/sample_v40_002/RelWithDebInfo/glew32.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Development/sample_v40_002/cocos2d/external/win32-specific/icon/prebuilt/iconv.dll C:/Development/sample_v40_002/win32-build/bin/sample_v40_002/RelWithDebInfo/iconv.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Development/sample_v40_002/cocos2d/external/win32-specific/MP3Decoder/prebuilt/libmpg123.dll C:/Development/sample_v40_002/win32-build/bin/sample_v40_002/RelWithDebInfo/libmpg123.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Development/sample_v40_002/cocos2d/external/win32-specific/OggDecoder/prebuilt/libogg.dll C:/Development/sample_v40_002/win32-build/bin/sample_v40_002/RelWithDebInfo/libogg.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Development/sample_v40_002/cocos2d/external/win32-specific/OggDecoder/prebuilt/libvorbis.dll C:/Development/sample_v40_002/win32-build/bin/sample_v40_002/RelWithDebInfo/libvorbis.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Development/sample_v40_002/cocos2d/external/win32-specific/OggDecoder/prebuilt/libvorbisfile.dll C:/Development/sample_v40_002/win32-build/bin/sample_v40_002/RelWithDebInfo/libvorbisfile.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Development/sample_v40_002/cocos2d/external/win32-specific/OpenalSoft/prebuilt/OpenAL32.dll C:/Development/sample_v40_002/win32-build/bin/sample_v40_002/RelWithDebInfo/OpenAL32.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Development/sample_v40_002/cocos2d/external/zlib/../win32-specific/zlib/prebuilt/zlib1.dll C:/Development/sample_v40_002/win32-build/bin/sample_v40_002/RelWithDebInfo/zlib1.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PostBuildEvent>
+    <Link>
+      <AdditionalDependencies>lib\RelWithDebInfo\cocos2d.lib;lib\RelWithDebInfo\external.lib;..\cocos2d\external\Box2D\prebuilt\win32\release\libbox2d.lib;..\cocos2d\external\chipmunk\prebuilt\win32\release-lib\libchipmunk.lib;..\cocos2d\external\freetype2\prebuilt\win32\freetype.lib;lib\RelWithDebInfo\ext_recast.lib;..\cocos2d\external\bullet\prebuilt\win32\release\libbullet.lib;..\cocos2d\external\jpeg\prebuilt\win32\libjpeg.lib;..\cocos2d\external\webp\prebuilt\win32\libwebp.lib;..\cocos2d\external\websockets\prebuilt\win32\websockets.lib;..\cocos2d\external\openssl\prebuilt\win32\libssl.lib;..\cocos2d\external\openssl\prebuilt\win32\libcrypto.lib;..\cocos2d\external\uv\prebuilt\win32\uv_a.lib;lib\RelWithDebInfo\ext_tinyxml2.lib;lib\RelWithDebInfo\ext_xxhash.lib;lib\RelWithDebInfo\ext_xxtea.lib;lib\RelWithDebInfo\ext_clipper.lib;lib\RelWithDebInfo\ext_edtaa3func.lib;lib\RelWithDebInfo\ext_convertUTF.lib;lib\RelWithDebInfo\ext_poly2tri.lib;lib\RelWithDebInfo\ext_md5.lib;..\cocos2d\external\curl\prebuilt\win32\libcurl.lib;..\cocos2d\external\png\prebuilt\win32\libpng.lib;..\cocos2d\external\win32-specific\gles\prebuilt\glew32.lib;..\cocos2d\external\win32-specific\icon\prebuilt\libiconv.lib;..\cocos2d\external\win32-specific\MP3Decoder\prebuilt\libmpg123.lib;..\cocos2d\external\win32-specific\OggDecoder\prebuilt\libogg.lib;..\cocos2d\external\win32-specific\OggDecoder\prebuilt\libvorbis.lib;..\cocos2d\external\win32-specific\OggDecoder\prebuilt\libvorbisfile.lib;..\cocos2d\external\win32-specific\OpenalSoft\prebuilt\OpenAL32.lib;..\cocos2d\external\glfw3\prebuilt\win32\glfw3.lib;..\cocos2d\external\zlib\..\win32-specific\zlib\prebuilt\libzlib.lib;lib\RelWithDebInfo\ext_unzip.lib;ws2_32.lib;userenv.lib;psapi.lib;winmm.lib;Version.lib;Iphlpapi.lib;opengl32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/Development/sample_v40_002/win32-build/RelWithDebInfo/sample_v40_002.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Development/sample_v40_002/win32-build/bin/sample_v40_002/RelWithDebInfo/sample_v40_002.pdb</ProgramDataBaseFile>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Development\sample_v40_002\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Building Custom Rule C:/Development/sample_v40_002/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Development/sample_v40_002 -BC:/Development/sample_v40_002/win32-build --check-stamp-file C:/Development/sample_v40_002/win32-build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Development\sample_v40_002\cocos2d\cmake\Modules\CocosBuildHelpers.cmake;C:\Development\sample_v40_002\cocos2d\cmake\Modules\CocosBuildSet.cmake;C:\Development\sample_v40_002\cocos2d\cmake\Modules\CocosConfigDefine.cmake;C:\Development\sample_v40_002\cocos2d\cmake\Modules\CocosConfigDepend.cmake;C:\Development\sample_v40_002\win32-build\CMakeFiles\3.16.2\CMakeCCompiler.cmake;C:\Development\sample_v40_002\win32-build\CMakeFiles\3.16.2\CMakeCXXCompiler.cmake;C:\Development\sample_v40_002\win32-build\CMakeFiles\3.16.2\CMakeRCCompiler.cmake;C:\Development\sample_v40_002\win32-build\CMakeFiles\3.16.2\CMakeSystem.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeCCompiler.cmake.in;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeCCompilerABI.c;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeCXXCompiler.cmake.in;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeCXXCompilerABI.cpp;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeCompilerIdDetection.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeDetermineCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeDetermineCXXCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeDetermineCompileFeatures.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeDetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeDetermineCompilerABI.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeDetermineCompilerId.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeDetermineRCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeDetermineSystem.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeFindBinUtils.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeParseArguments.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeParseImplicitIncludeInfo.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeParseImplicitLinkInfo.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeRCCompiler.cmake.in;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeSystem.cmake.in;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeTestCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeTestCXXCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeTestCompilerCommon.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeTestRCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\ADSP-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\ARMCC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\ARMClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\AppleClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\Borland-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\Bruce-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\Clang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\Comeau-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\Compaq-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\Compaq-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\Cray-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\GHS-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\GNU-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\GNU-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\HP-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\HP-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\IAR-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\Intel-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\MSVC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\NVIDIA-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\PGI-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\PathScale-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\SCO-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\SDCC-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\SunPro-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\SunPro-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\TI-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\TinyCC-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\VisualAge-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\VisualAge-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\Watcom-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\XL-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\XL-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\XLClang-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\XLClang-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\zOS-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\zOS-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CompilerId\VS-10.vcxproj.in;C:\Program Files\CMake\share\cmake-3.16\Modules\Internal\FeatureTesting.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Platform\Windows-Determine-CXX.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Platform\WindowsPaths.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Development\sample_v40_002\win32-build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Building Custom Rule C:/Development/sample_v40_002/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Development/sample_v40_002 -BC:/Development/sample_v40_002/win32-build --check-stamp-file C:/Development/sample_v40_002/win32-build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Development\sample_v40_002\cocos2d\cmake\Modules\CocosBuildHelpers.cmake;C:\Development\sample_v40_002\cocos2d\cmake\Modules\CocosBuildSet.cmake;C:\Development\sample_v40_002\cocos2d\cmake\Modules\CocosConfigDefine.cmake;C:\Development\sample_v40_002\cocos2d\cmake\Modules\CocosConfigDepend.cmake;C:\Development\sample_v40_002\win32-build\CMakeFiles\3.16.2\CMakeCCompiler.cmake;C:\Development\sample_v40_002\win32-build\CMakeFiles\3.16.2\CMakeCXXCompiler.cmake;C:\Development\sample_v40_002\win32-build\CMakeFiles\3.16.2\CMakeRCCompiler.cmake;C:\Development\sample_v40_002\win32-build\CMakeFiles\3.16.2\CMakeSystem.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeCCompiler.cmake.in;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeCCompilerABI.c;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeCXXCompiler.cmake.in;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeCXXCompilerABI.cpp;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeCompilerIdDetection.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeDetermineCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeDetermineCXXCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeDetermineCompileFeatures.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeDetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeDetermineCompilerABI.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeDetermineCompilerId.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeDetermineRCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeDetermineSystem.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeFindBinUtils.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeParseArguments.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeParseImplicitIncludeInfo.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeParseImplicitLinkInfo.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeRCCompiler.cmake.in;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeSystem.cmake.in;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeTestCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeTestCXXCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeTestCompilerCommon.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeTestRCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\ADSP-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\ARMCC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\ARMClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\AppleClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\Borland-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\Bruce-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\Clang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\Comeau-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\Compaq-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\Compaq-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\Cray-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\GHS-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\GNU-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\GNU-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\HP-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\HP-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\IAR-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\Intel-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\MSVC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\NVIDIA-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\PGI-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\PathScale-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\SCO-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\SDCC-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\SunPro-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\SunPro-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\TI-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\TinyCC-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\VisualAge-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\VisualAge-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\Watcom-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\XL-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\XL-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\XLClang-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\XLClang-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\zOS-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\zOS-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CompilerId\VS-10.vcxproj.in;C:\Program Files\CMake\share\cmake-3.16\Modules\Internal\FeatureTesting.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Platform\Windows-Determine-CXX.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Platform\WindowsPaths.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Development\sample_v40_002\win32-build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Building Custom Rule C:/Development/sample_v40_002/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Development/sample_v40_002 -BC:/Development/sample_v40_002/win32-build --check-stamp-file C:/Development/sample_v40_002/win32-build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\Development\sample_v40_002\cocos2d\cmake\Modules\CocosBuildHelpers.cmake;C:\Development\sample_v40_002\cocos2d\cmake\Modules\CocosBuildSet.cmake;C:\Development\sample_v40_002\cocos2d\cmake\Modules\CocosConfigDefine.cmake;C:\Development\sample_v40_002\cocos2d\cmake\Modules\CocosConfigDepend.cmake;C:\Development\sample_v40_002\win32-build\CMakeFiles\3.16.2\CMakeCCompiler.cmake;C:\Development\sample_v40_002\win32-build\CMakeFiles\3.16.2\CMakeCXXCompiler.cmake;C:\Development\sample_v40_002\win32-build\CMakeFiles\3.16.2\CMakeRCCompiler.cmake;C:\Development\sample_v40_002\win32-build\CMakeFiles\3.16.2\CMakeSystem.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeCCompiler.cmake.in;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeCCompilerABI.c;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeCXXCompiler.cmake.in;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeCXXCompilerABI.cpp;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeCompilerIdDetection.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeDetermineCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeDetermineCXXCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeDetermineCompileFeatures.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeDetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeDetermineCompilerABI.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeDetermineCompilerId.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeDetermineRCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeDetermineSystem.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeFindBinUtils.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeParseArguments.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeParseImplicitIncludeInfo.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeParseImplicitLinkInfo.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeRCCompiler.cmake.in;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeSystem.cmake.in;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeTestCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeTestCXXCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeTestCompilerCommon.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeTestRCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\ADSP-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\ARMCC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\ARMClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\AppleClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\Borland-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\Bruce-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\Clang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\Comeau-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\Compaq-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\Compaq-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\Cray-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\GHS-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\GNU-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\GNU-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\HP-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\HP-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\IAR-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\Intel-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\MSVC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\NVIDIA-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\PGI-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\PathScale-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\SCO-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\SDCC-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\SunPro-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\SunPro-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\TI-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\TinyCC-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\VisualAge-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\VisualAge-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\Watcom-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\XL-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\XL-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\XLClang-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\XLClang-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\zOS-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\zOS-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CompilerId\VS-10.vcxproj.in;C:\Program Files\CMake\share\cmake-3.16\Modules\Internal\FeatureTesting.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Platform\Windows-Determine-CXX.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Platform\WindowsPaths.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\Development\sample_v40_002\win32-build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Building Custom Rule C:/Development/sample_v40_002/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Development/sample_v40_002 -BC:/Development/sample_v40_002/win32-build --check-stamp-file C:/Development/sample_v40_002/win32-build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\Development\sample_v40_002\cocos2d\cmake\Modules\CocosBuildHelpers.cmake;C:\Development\sample_v40_002\cocos2d\cmake\Modules\CocosBuildSet.cmake;C:\Development\sample_v40_002\cocos2d\cmake\Modules\CocosConfigDefine.cmake;C:\Development\sample_v40_002\cocos2d\cmake\Modules\CocosConfigDepend.cmake;C:\Development\sample_v40_002\win32-build\CMakeFiles\3.16.2\CMakeCCompiler.cmake;C:\Development\sample_v40_002\win32-build\CMakeFiles\3.16.2\CMakeCXXCompiler.cmake;C:\Development\sample_v40_002\win32-build\CMakeFiles\3.16.2\CMakeRCCompiler.cmake;C:\Development\sample_v40_002\win32-build\CMakeFiles\3.16.2\CMakeSystem.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeCCompiler.cmake.in;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeCCompilerABI.c;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeCXXCompiler.cmake.in;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeCXXCompilerABI.cpp;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeCompilerIdDetection.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeDetermineCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeDetermineCXXCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeDetermineCompileFeatures.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeDetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeDetermineCompilerABI.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeDetermineCompilerId.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeDetermineRCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeDetermineSystem.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeFindBinUtils.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeParseArguments.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeParseImplicitIncludeInfo.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeParseImplicitLinkInfo.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeRCCompiler.cmake.in;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeSystem.cmake.in;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeTestCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeTestCXXCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeTestCompilerCommon.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CMakeTestRCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\ADSP-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\ARMCC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\ARMClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\AppleClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\Borland-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\Bruce-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\Clang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\Comeau-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\Compaq-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\Compaq-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\Cray-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\GHS-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\GNU-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\GNU-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\HP-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\HP-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\IAR-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\Intel-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\MSVC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\NVIDIA-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\PGI-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\PathScale-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\SCO-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\SDCC-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\SunPro-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\SunPro-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\TI-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\TinyCC-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\VisualAge-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\VisualAge-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\Watcom-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\XL-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\XL-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\XLClang-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\XLClang-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\zOS-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Compiler\zOS-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\CompilerId\VS-10.vcxproj.in;C:\Program Files\CMake\share\cmake-3.16\Modules\Internal\FeatureTesting.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Platform\Windows-Determine-CXX.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.16\Modules\Platform\WindowsPaths.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\Development\sample_v40_002\win32-build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\Classes\BlockSprite.h" />
+    <ClInclude Include="..\Classes\constant.h" />
+    <ClInclude Include="..\Classes\GLES-Render.h" />
+    <ClInclude Include="C:\Development\sample_v40_002\Classes\AppDelegate.h" />
+    <ClInclude Include="C:\Development\sample_v40_002\Classes\HelloWorldScene.h" />
+    <ClInclude Include="C:\Development\sample_v40_002\proj.win32\main.h" />
+    <ClInclude Include="C:\Development\sample_v40_002\proj.win32\resource.h" />
+    <ClCompile Include="..\Classes\BlockSprite.cpp" />
+    <ClCompile Include="..\Classes\GLES-Render.cpp" />
+    <ClCompile Include="C:\Development\sample_v40_002\Classes\AppDelegate.cpp" />
+    <ClCompile Include="C:\Development\sample_v40_002\Classes\HelloWorldScene.cpp" />
+    <ClCompile Include="C:\Development\sample_v40_002\proj.win32\main.cpp" />
+    <ResourceCompile Include="C:\Development\sample_v40_002\proj.win32\game.rc" />
+    <ClInclude Include="C:\Development\sample_v40_002\Resources\CloseNormal.png" />
+    <ClInclude Include="C:\Development\sample_v40_002\Resources\CloseSelected.png" />
+    <ClInclude Include="C:\Development\sample_v40_002\Resources\HelloWorld.png" />
+    <ClInclude Include="C:\Development\sample_v40_002\Resources\fonts\Marker Felt.ttf" />
+    <ClInclude Include="C:\Development\sample_v40_002\Resources\fonts\arial.ttf" />
+    <ClInclude Include="C:\Development\sample_v40_002\Resources\res\.gitkeep" />
+    <ClCompile Include="C:\Development\sample_v40_002\cocos2d\cocos\precheader.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="C:\Development\sample_v40_002\win32-build\ZERO_CHECK.vcxproj">
+      <Project>{14B811B0-E1C3-315D-9A6D-541CF30CD8FC}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\sample_v40_002\win32-build\SYNC_RESOURCE-sample_v40_002.vcxproj">
+      <Project>{C49025E2-62E8-33CF-AD54-9397E1E2F871}</Project>
+      <Name>SYNC_RESOURCE-sample_v40_002</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\sample_v40_002\win32-build\engine\cocos\core\cocos2d.vcxproj">
+      <Project>{F3741EED-E81B-3AE1-8746-B07980126D4B}</Project>
+      <Name>cocos2d</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\sample_v40_002\win32-build\engine\external\clipper\ext_clipper.vcxproj">
+      <Project>{E5176AA7-1FE3-3EE6-8C6A-3C5394704B65}</Project>
+      <Name>ext_clipper</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\sample_v40_002\win32-build\engine\external\ConvertUTF\ext_convertUTF.vcxproj">
+      <Project>{31FCC431-3E3C-3609-B70D-F454D2D3B862}</Project>
+      <Name>ext_convertUTF</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\sample_v40_002\win32-build\engine\external\edtaa3func\ext_edtaa3func.vcxproj">
+      <Project>{E01B4622-64C5-399D-81B9-86BC53A2999A}</Project>
+      <Name>ext_edtaa3func</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\sample_v40_002\win32-build\engine\external\md5\ext_md5.vcxproj">
+      <Project>{BCD32F0A-C3D9-36B1-92DD-3761E309DC42}</Project>
+      <Name>ext_md5</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\sample_v40_002\win32-build\engine\external\poly2tri\ext_poly2tri.vcxproj">
+      <Project>{667E8E30-A2FA-391D-86D8-FF751DBAFA2F}</Project>
+      <Name>ext_poly2tri</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\sample_v40_002\win32-build\engine\external\recast\ext_recast.vcxproj">
+      <Project>{5AAFAE85-47BC-3311-8539-DA05CC996230}</Project>
+      <Name>ext_recast</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\sample_v40_002\win32-build\engine\external\tinyxml2\ext_tinyxml2.vcxproj">
+      <Project>{471FC6C5-A4ED-32E2-8F5C-2268B6CC5962}</Project>
+      <Name>ext_tinyxml2</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\sample_v40_002\win32-build\engine\external\unzip\ext_unzip.vcxproj">
+      <Project>{02113961-9D1C-3276-B3F0-E694B2FBCB38}</Project>
+      <Name>ext_unzip</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\sample_v40_002\win32-build\engine\external\xxhash\ext_xxhash.vcxproj">
+      <Project>{48244020-2F43-3A99-9ED2-8BA2C10B3A61}</Project>
+      <Name>ext_xxhash</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\sample_v40_002\win32-build\engine\external\xxtea\ext_xxtea.vcxproj">
+      <Project>{1BA387B7-061C-34B5-9967-2DF5AD92C2D5}</Project>
+      <Name>ext_xxtea</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Development\sample_v40_002\win32-build\engine\external\external.vcxproj">
+      <Project>{855A02B5-FE68-35C1-B494-2A0B56B33C24}</Project>
+      <Name>external</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\Resources\gameoverline.plist" />
+    <None Include="..\Resources\game_blockdel_eff_01.plist" />
+    <None Include="..\Resources\game_blockdel_eff_anim.plist" />
+    <None Include="..\Resources\textures.plist" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="..\Resources\game_blockdel_eff_01.png" />
+    <Image Include="..\Resources\textures.png" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

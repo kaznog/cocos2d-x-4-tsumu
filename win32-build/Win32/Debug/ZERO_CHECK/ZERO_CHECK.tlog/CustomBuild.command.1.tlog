@@ -1,0 +1,10 @@
+^C:\DEVELOPMENT\SAMPLE_V40_002\WIN32-BUILD\CMAKEFILES\099FD862378FCE76412748050510D029\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Development/sample_v40_002 -BC:/Development/sample_v40_002/win32-build --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file C:/Development/sample_v40_002/win32-build/sample_v40_002.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

@@ -1,0 +1,8 @@
+﻿  Building Custom Rule C:/Development/sample_v40_002/cocos2d/external/poly2tri/CMakeLists.txt
+  shapes.cc
+  sweep.cc
+  sweep_context.cc
+  cdt.cc
+  advancing_front.cc
+  コードを生成中...
+  ext_poly2tri.vcxproj -> C:\Development\sample_v40_002\win32-build\lib\Debug\ext_poly2tri.lib

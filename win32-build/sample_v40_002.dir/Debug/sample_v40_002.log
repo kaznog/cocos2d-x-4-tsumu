@@ -1,0 +1,5 @@
+﻿  AppDelegate.cpp
+C:\Development\sample_v40_002\cocos2d\cocos\base/ccUTF8.h(1,1): warning C4819: ファイルは、現在のコード ページ (932) で表示できない文字を含んでいます。データの損失を防ぐために、ファイルを Unicode 形式で保存してください。
+C:\Development\sample_v40_002\cocos2d\cocos\platform/CCSAXParser.h(1,1): warning C4819: ファイルは、現在のコード ページ (932) で表示できない文字を含んでいます。データの損失を防ぐために、ファイルを Unicode 形式で保存してください。
+C:\Development\sample_v40_002\Classes\AppDelegate.cpp(48,44): warning C4305: '引数': 'double' から 'float' へ切り詰めます。
+  sample_v40_002.vcxproj -> C:\Development\sample_v40_002\win32-build\bin\sample_v40_002\Debug\sample_v40_002.exe
